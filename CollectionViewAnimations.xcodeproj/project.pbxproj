@@ -28,6 +28,30 @@
 		4CAAD8F21C13BC09004ADF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAAD8B61C13BB8E004ADF5C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5288D6CB21E8E5CB00B2E339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5288D6C521E8E5CB00B2E339 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 373778DCDA8F3549BC4C5EB2A78538B4;
+			remoteInfo = "Pods-Cell Animations";
+		};
+		5288D6CD21E8E5CB00B2E339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5288D6C521E8E5CB00B2E339 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C098DF4B6E3453044826F36FA3D80D3;
+			remoteInfo = "Pods-Sticky Headers";
+		};
+		5288D6CF21E8E5CB00B2E339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5288D6C521E8E5CB00B2E339 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C53F89EB2A648BB8DE79C6FDCC53D3D;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		18B0C738F122481738B46FB2 /* Pods_Cell_Animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cell_Animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D02D92C334A4346F057CF17 /* Pods-Sticky Headers with Cell Animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sticky Headers with Cell Animations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sticky Headers with Cell Animations/Pods-Sticky Headers with Cell Animations.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +70,7 @@
 		4CAAD8E31C13BBFB004ADF5C /* Sticky Headers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sticky Headers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAAD8F91C13BC09004ADF5C /* Cell Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cell Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAAD8FA1C13BC5A004ADF5C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5288D6C521E8E5CB00B2E339 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		5591CAF8B39756F2FC1CCB37 /* Pods-Cell Animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cell Animations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cell Animations/Pods-Cell Animations.debug.xcconfig"; sourceTree = "<group>"; };
 		A30CAC018488481DF5AFC43B /* Pods-Sticky Headers with Cell Animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sticky Headers with Cell Animations.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sticky Headers with Cell Animations/Pods-Sticky Headers with Cell Animations.release.xcconfig"; sourceTree = "<group>"; };
 		A7CA380166A1B64BC147E879 /* Pods_Sticky_Headers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sticky_Headers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +102,7 @@
 		394EBE2D4B16F61C2875E2ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5288D6C521E8E5CB00B2E339 /* Pods.xcodeproj */,
 				18B0C738F122481738B46FB2 /* Pods_Cell_Animations.framework */,
 				A7CA380166A1B64BC147E879 /* Pods_Sticky_Headers.framework */,
 				BE31EDBDB05B712895C68A2E /* Pods_Sticky_Headers_with_Cell_Animations.framework */,
@@ -154,6 +180,16 @@
 			name = Support;
 			sourceTree = "<group>";
 		};
+		5288D6C621E8E5CB00B2E339 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5288D6CC21E8E5CB00B2E339 /* Pods_Cell_Animations.framework */,
+				5288D6CE21E8E5CB00B2E339 /* Pods_Sticky_Headers.framework */,
+				5288D6D021E8E5CB00B2E339 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F3C5EDA6F5AB089E3D40F11B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,12 +210,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CAAD8E01C13BBFB004ADF5C /* Build configuration list for PBXNativeTarget "Sticky Headers" */;
 			buildPhases = (
+				674990552210589706D3ED68 /* [CP] Check Pods Manifest.lock */,
 				4CAAD8CF1C13BBFB004ADF5C /* Check Pods Manifest.lock */,
 				4CAAD8D01C13BBFB004ADF5C /* Sources */,
 				4CAAD8D81C13BBFB004ADF5C /* Frameworks */,
 				4CAAD8DA1C13BBFB004ADF5C /* Resources */,
 				4CAAD8DE1C13BBFB004ADF5C /* Embed Pods Frameworks */,
-				4CAAD8DF1C13BBFB004ADF5C /* Copy Pods Resources */,
+				3DA2BDC856FA7BB9F1A4ABF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,12 +231,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CAAD8F61C13BC09004ADF5C /* Build configuration list for PBXNativeTarget "Cell Animations" */;
 			buildPhases = (
+				C5F2B7DE7CB34C792FC2F286 /* [CP] Check Pods Manifest.lock */,
 				4CAAD8E51C13BC09004ADF5C /* Check Pods Manifest.lock */,
 				4CAAD8E61C13BC09004ADF5C /* Sources */,
 				4CAAD8EE1C13BC09004ADF5C /* Frameworks */,
 				4CAAD8F01C13BC09004ADF5C /* Resources */,
 				4CAAD8F41C13BC09004ADF5C /* Embed Pods Frameworks */,
-				4CAAD8F51C13BC09004ADF5C /* Copy Pods Resources */,
+				91D5E3E7B6EFB86021986AD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +269,12 @@
 			mainGroup = 4C79D3391BE3145000E4EB66;
 			productRefGroup = 4C79D3431BE3145000E4EB66 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5288D6C621E8E5CB00B2E339 /* Products */;
+					ProjectRef = 5288D6C521E8E5CB00B2E339 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4CAAD8E41C13BC09004ADF5C /* Cell Animations */,
@@ -238,6 +282,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5288D6CC21E8E5CB00B2E339 /* Pods_Cell_Animations.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Cell_Animations.framework;
+			remoteRef = 5288D6CB21E8E5CB00B2E339 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5288D6CE21E8E5CB00B2E339 /* Pods_Sticky_Headers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Sticky_Headers.framework;
+			remoteRef = 5288D6CD21E8E5CB00B2E339 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5288D6D021E8E5CB00B2E339 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 5288D6CF21E8E5CB00B2E339 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4CAAD8DA1C13BBFB004ADF5C /* Resources */ = {
@@ -261,6 +329,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3DA2BDC856FA7BB9F1A4ABF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sticky Headers/Pods-Sticky Headers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sticky Headers/Pods-Sticky Headers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4CAAD8CF1C13BBFB004ADF5C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,21 +379,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sticky Headers/Pods-Sticky Headers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4CAAD8DF1C13BBFB004ADF5C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sticky Headers/Pods-Sticky Headers-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4CAAD8E51C13BC09004ADF5C /* Check Pods Manifest.lock */ = {
@@ -336,19 +411,70 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cell Animations/Pods-Cell Animations-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4CAAD8F51C13BC09004ADF5C /* Copy Pods Resources */ = {
+		674990552210589706D3ED68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sticky Headers-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cell Animations/Pods-Cell Animations-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91D5E3E7B6EFB86021986AD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cell Animations/Pods-Cell Animations-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cell Animations/Pods-Cell Animations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F2B7DE7CB34C792FC2F286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cell Animations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -436,6 +562,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -472,6 +599,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
